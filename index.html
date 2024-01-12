@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Personal Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/portfolio-1.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #4686FF;
+            --secondary: #FFC448;
+            --light: #132E43;
+            /* --dark: #12141D; */
+            --dark: #081C29;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show preloader_screen position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="text-primary fw-bold m-0">ProMan</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#skill" class="nav-item nav-link">Skills</a>
+                <a href="#service" class="nav-item nav-link">Services</a>
+            </div>
+            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+                <h1 class="text-primary fw-bold m-0">ProMan</h1>
+            </a>
+            <div class="navbar-nav me-auto py-0">
+                <a href="#project" class="nav-item nav-link">Projects</a>
+                <a href="#team" class="nav-item nav-link">Team</a>
+                <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav> -->
+
+    <div class="navigation">
+        <ul class="navbar_nav">
+            <li class="brand">
+                <a href="index.html">
+                    <div class="icon brand_img">
+                        <img src="./img/portfolio-1.png" alt="">
+                    </div>
+                    <span class="title">
+                        <img src="./img/portfolio_logo-3.png" alt="">
+                    </span>
+                    <!-- <span class="icon"><ion-icon name="logo-apple"></ion-icon></span> -->
+                    <!-- <span class="title">Portfolio.</span> -->
+                </a>
+            </li>
+            <li style="--i: 1;" class="list active">
+                <a href="#home" class="active">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li style="--i: 2;" class="list">
+                <a href="#about">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="title">About</span>
+                </a>
+            </li>
+            <li style="--i: 3;" class="list">
+                <a href="#skill">
+                    <span class="icon"><ion-icon name="sunny-outline"></ion-icon></span>
+                    <span class="title">Skills</span>
+                </a>
+            </li>
+            <li style="--i: 4;" class="list">
+                <a href="#service">
+                    <span class="icon"><ion-icon name="pulse-outline"></ion-icon></span>
+                    <span class="title">Services</span>
+                </a>
+            </li>
+            <li style="--i: 5;" class="list">
+                <a href="#project">
+                    <span class="icon"><ion-icon name="git-network-outline"></ion-icon></span>
+                    <span class="title">Projects</span>
+                </a>
+            </li>
+            <!-- <li style="--i: 6;" class="list">
+                <a href="#team">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <span class="title">Team</span>
+                </a>
+            </li> -->
+            <li style="--i: 6;" class="list">
+                <a href="#testimonial">
+                    <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
+                    <span class="title">Testimonial</span>
+                </a>
+            </li>
+            <li style="--i: 7;" class="list">
+                <a href="#contact">
+                    <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                    <span class="title">Contact</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+    <div class="toggle"></div>
+    <!-- Navbar End -->
+
+
+    <div class="main_wrap">
+        <!-- Header Start -->
+        <div class="container-fluid hero pt-md-5 my-0" id="home">
+            <div class="container pb-0 pt-0 pt-lg-4">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 py-6 pb-0 pb-md-6 pt-lg-0">
+                        <h2 class="text-primary mb-3"
+                            style="opacity: 0; animation: slideTop 1s ease forwards;animation-delay: 1s;"><span
+                                class="btn-outline-secondary">Hello</span>, It's Me
+                        </h2>
+                        <h1 class="display-3 mb-3"
+                            style="opacity: 0; animation: slideRight 1s ease forwards;animation-delay: .5s;">Techie Script
+                        </h1>
+                        <div class="d-md-flex auto_types"
+                            style="opacity: 0; animation: slideBottom 1s ease forwards;animation-delay: 1s;">
+                            <h2 style="display: inline;" class="px-md-2 i_am">And I'm A</h2>
+                            <h2 style="display: inline;" class="typed-text-output d-inline typed_text"></h2>
+                        </div>
+                        <div class="typed-text d-none">Mobile Developer, Front End Developer, Website Designer</div>
+                        <div class="d-flex align-items-center pt-5">
+                            <!-- <a href="" class="btn btn-primary btn_primary py-3 px-4 me-5">Download CV</a> -->
+                            <a href="index.html" class="downloadCV_btn"><span>Download CV</span></a>
+                            <!-- <button type="button" class="btn-play" data-bs-toggle="modal"
+                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal"
+                                style="opacity: 0; animation: slideLeft 1s ease forwards;animation-delay: 2s;">
+                                <span></span>
+                            </button>
+                            <h5 class="ms-4 mb-0 d-none play_text d-sm-block"
+                                style="opacity: 0; animation: slideLeft 1s ease forwards;animation-delay: 2s;">Play Video
+                            </h5> -->
+                        </div>
+                        <div class="social_media">
+                            <a href="tel:+2348119607193" style="--i:7;"><ion-icon name="call-outline"></ion-icon></a>
+                            <a href="https://wa.link/rx5ioh" target="_blank" style="--i:7;"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                            <a href="https://twitter.com/AdeoyeSodeeq21" target="_blank" style="--i:8;"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="https://www.linkedin.com/in/adeoye-sodeeq-57a111246/" target="_blank" style="--i:10;"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            <!-- <a href="#" style="--i:9;"><i class='bx bxl-instagram-alt'></i></a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6 overflow-hidden" style="margin-top: 0 !important;">
+                        <img class="img-fluid hero_img" src="img/profile03.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    
+    
+        <!-- Video Modal Start -->
+        <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                                allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video Modal End -->
+    
+    
+        <!-- About Start -->
+        <div class="container-fluid pt-md-5 pb-5 my-0" id="about">
+            <div class="container pb-5 my-0">
+                <div class="row g-5 my-0">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="d-flex flex-wrap align-items-center mb-5">
+                            <div class="years flex-shrink-0 text-center me-4">
+                                <h1 class="display-1 mb-0">2+</h1>
+                                <h5 class="mb-0">Years</h5>
+                            </div>
+                            <h3 class="lh-base mb-0 mt-3 mt-md-0">of working experience as a Web/App Designer & Developer
+                            </h3>
+                        </div>
+                        <p class="mb-4">As a Web/App Designer and Developer, I have had the opportunity to work on numerous projects and gain valuable experience in designing and developing web and mobile applications. My portfolio aims to provide an overview of my working experience in this role, highlighting -
+                            <!-- my skills, responsibilities, and achievements. -->
+                        </p>
+                        <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Skills Acquired</p>
+                        <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Responsibilities</p>
+                        <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Project Achievements</p>
+                        <a href="index.html" class="downloadCV_btn mt-4"><span>Read More</span></a>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row g-3 mb-4">
+                            <div class="col-12 mt-4 mb-3 mb-md-5">
+                                <div class="box mx-auto">
+                                    <div class="content">
+                                        <img src="img/myImg.jpg" alt="">
+                                        <h2>TechieScript<br><span>Mobile/Frontend <br> Developer</span></h2>
+                                        <a href="https://wa.link/rx5ioh" target="_blank"><span>Hire me</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-sm-6">
+                                <img class="img-fluid rounded" src="img/about-1.jpg" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
+                            </div> -->
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <h5 class="border-end pe-3 me-3 mb-0">Happy Clients</h5>
+                            <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">75</h2>
+                        </div>
+                        <p class="mb-4">During my tenure as a Web/App Designer and Developer, I have acquired a diverse set of skills that have enabled me to create engaging and user-friendly digital experiences that articulates happy clients.</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
+                            <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">92</h2>
+                        </div>
+                        <p class="mb-0">Throughout my career, I have achieved significant milestones and contributed to the success of various projects and noteworthy achievements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+    
+    
+        <!-- Expertise Start -->
+        <div class="container-fluid py-6 pb-5" id="skill">
+            <div class="container py-5">
+                <h1 class="display-5 mb-5">Skills & <span style="color: var(--primary);">Experience</span></h1>
+                <p class="mb-5 pb-4 skills_p">With a robust foundation and a passion for continuous learning, my skills and experience reflect a dynamic journey through the realms of design and development. Armed with proficiency in cutting-edge technologies, programming languages, and design tools, I have cultivated a versatile skill set. My hands-on experience ranges from creating elegant user interfaces and designing user-centric experiences to developing scalable and efficient web and mobile applications.</p>
+                <div class="row g-5" style="align-items: end !important;">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h3 class="mb-4">My Skills</h3>
+                        <div class="row align-items-center mb-4">
+                            <div class="col-md-6">
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="font-weight-bold">Flutter</h6>
+                                        <h6 class="font-weight-bold">85%</h6>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="font-weight-bold">Dart.js</h6>
+                                        <h6 class="font-weight-bold">70%</h6>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="font-weight-bold">CSS/Bootstrap</h6>
+                                        <h6 class="font-weight-bold">90%</h6>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="font-weight-bold">HTML</h6>
+                                        <h6 class="font-weight-bold">95%</h6>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="font-weight-bold">Javascript</h6>
+                                        <h6 class="font-weight-bold">60%</h6>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="font-weight-bold">Vue.js/React.js</h6>
+                                        <h6 class="font-weight-bold">75%</h6>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <ul class="nav nav-pills rounded border border-1 border-primary mb-5">
+                            <li class="nav-item w-50">
+                                <button class="nav-link w-100 py-2 fs-5 active" data-bs-toggle="pill"
+                                    href="#tab-1">Experience</button>
+                                <div class="tab_indicator"></div>
+                            </li>
+                            <li class="nav-item w-50">
+                                <button class="nav-link w-100 py-2 fs-5" data-bs-toggle="pill"
+                                    href="#tab-2">Education</button>
+                                <div class="tab_indicator"></div>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tab-1" class="tab-pane fade show p-0 active">
+                                <div class="row gy-5 gx-4">
+                                    <div class="col-sm-6">
+                                        <h5>Frontend Developer</h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">2022 - Present</p>
+                                        <h6 class="mb-0">Autocredit Technology</h6>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5>Mobile Developer</h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">2022 - Present</p>
+                                        <h6 class="mb-0">Autocredit Technology</h6>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5>Web Designer</h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">2022 - Present</p>
+                                        <h6 class="mb-0">Autocredit Technology</h6>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5>Apps Designer</h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">2022 - Present</p>
+                                        <h6 class="mb-0">Autocredit Technology</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-2" class="tab-pane fade show p-0">
+                                <div class="row gy-5 gx-4">
+                                    <div class="col-sm-6">
+                                        <h5>COMPUTER SCIENCE</h5>
+                                        <hr class="text-primary my-2">
+                                        <h6 class="mb-2 mt-3">Lagos State University (LASU)</h6>
+                                        <p class="text-primary mb-1">2022 - Present</p>
+                                    </div>
+                                    <!-- <div class="col-sm-6">
+                                        <h5>IOS Development</h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">2000 - 2045</p>
+                                        <h6 class="mb-0">Cambridge University</h6>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5>Web Design</h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">2000 - 2045</p>
+                                        <h6 class="mb-0">Cambridge University</h6>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5>Apps Design</h5>
+                                        <hr class="text-primary my-2">
+                                        <p class="text-primary mb-1">2000 - 2045</p>
+                                        <h6 class="mb-0">Cambridge University</h6>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Expertise End -->
+    
+    
+        <!-- Service Start -->
+        <div class="container-fluid my-0 py-6" id="service">
+            <div class="container">
+                <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-6">
+                        <h1 class="display-5 mb-0">My <span>Services</span></h1>
+                    </div>
+                    <!-- <div class="col-lg-6 text-lg-end">
+                        <a class="btn btn-primary py-3 px-5" href="">Hire Me</a>
+                    </div> -->
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column flex-sm-row rounded h-100 p-4 p-lg-5">
+                            <div class="bg-icon flex-shrink-0 mb-3">
+                                <i class="fa fa-crop-alt fa-2x text-dark"></i>
+                            </div>
+                            <div class="ms-sm-4">
+                                <h4 class="mb-3">App Design</h4>
+                                <!-- <h6 class="mb-3">Starts from <span class="text-primary">$600</span></h6> -->
+                                <span>In my journey as a designer, I have delved deeply into the realm of app design, where creativity meets functionality. Crafting seamless and intuitive user experiences has been at the heart of my approach.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column flex-sm-row rounded h-100 p-4 p-lg-5">
+                            <div class="bg-icon flex-shrink-0 mb-3">
+                                <i class="fa fa-code-branch fa-2x text-dark"></i>
+                            </div>
+                            <div class="ms-sm-4">
+                                <h4 class="mb-3">App Development</h4>
+                                <!-- <h6 class="mb-3">Starts from <span class="text-primary">$1000</span></h6> -->
+                                <span>In the realm of app development, I thrive on turning ideas into functional and user-centric applications. Proficient in a variety of programming languages and frameworks, I approach app development with a focus on scalability, efficiency, and a user-first mindset.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column flex-sm-row rounded h-100 p-4 p-lg-5">
+                            <div class="bg-icon flex-shrink-0 mb-3">
+                                <i class="fa fa-code fa-2x text-dark"></i>
+                            </div>
+                            <div class="ms-sm-4">
+                                <h4 class="mb-3">Web Design</h4>
+                                <!-- <h6 class="mb-3">Starts from <span class="text-primary">$500</span></h6> -->
+                                <span>As a web designer, I embark on a creative journey to bring digital visions to life on the web. My approach to web design is a harmonious blend of aesthetics and functionality. With a keen eye for detail, I carefully craft visually compelling interfaces that resonate with the brand's identity and captivate the user's attention.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column flex-sm-row rounded h-100 p-4 p-lg-5">
+                            <div class="bg-icon flex-shrink-0 mb-3">
+                                <i class="fa fa-laptop-code fa-2x text-dark"></i>
+                            </div>
+                            <div class="ms-sm-4">
+                                <h4 class="mb-3">Web Development</h4>
+                                <!-- <h6 class="mb-3">Starts from <span class="text-primary">$900</span></h6> -->
+                                <span>In the dynamic world of web development, I bring ideas to life through the power of code. With a strong foundation in a variety of programming languages and frameworks, I specialize in crafting responsive, scalable, and feature-rich websites. From conceptualization to deployment, I'm dedicated to delivering robust web solutions that not only meet the technical requirements but also prioritize a seamless user experience.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+    
+    
+        <!-- Projects Start -->
+        <div class="container-fluid py-6 pt-5" id="project">
+            <div class="container">
+                <div class="row m-0 g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-6">
+                        <h1 class="display-5 mb-0">My <span>Projects</span></h1>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                        <div style="margin-left: auto;width: fit-content;">
+                            <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
+                                <li class="mx-2 mx-md-3 mx-lg-4 active" data-filter="*">All Projects
+                                </li>
+                                <li class="mx-2 mx-md-3 mx-lg-4" data-filter=".first">Webapp Designs
+                                </li>
+                                <li class="mx-2 mx-md-3 mx-lg-4" data-filter=".second">Form Designs
+                                </li>
+                                <div class="list_inline_indicator"></div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item first">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid rounded" src="img/admission.jpeg" alt="" style="min-height: 14.2em;">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/admission.jpeg"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://admission-web.netlify.app" target="_blank"><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item first">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid rounded" src="img/myProject03_edited.png" alt="" style="min-height: 14.2em;">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/myProject03_edited.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://bleepus-healthcare.netlify.app" target="_blank"><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item second">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid rounded" src="img/myProject02.png" alt="" style="height: 14.2em;">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/myProject02.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://techie-anim-form.netlify.app/" target="_blank"><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item first">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid rounded" src="img/myProject01.png" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/myProject01.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://my-birthday-calculator.netlify.app/" target="_blank"><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item first">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid rounded" src="img/myProject04.png" alt="" style="height: 14.2em;">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/myProject04.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://techie-todo-webapp.netlify.app/" target="_blank"><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item with_p first second" style="min-height: 14.2em;">
+                        <a class="with_p_link" href="https://github.com/Techie-Ademola" target="_blank"></a>
+                            <p><a href="">Click to view more...</a></p>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item second">myProject04.png
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid rounded" src="img/myProject01.png" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/myProject01.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item first">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid rounded" src="img/myProject01.png" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/myProject01.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item second">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid rounded" src="img/myProject01.png" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/myProject01.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item first">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid rounded" src="img/myProject01.png" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/myProject01.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item second">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid rounded" src="img/myProject01.png" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/myProject01.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item first">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid rounded" src="img/myProject01.png" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/myProject01.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item second">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid rounded" src="img/myProject01.png" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/myProject01.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item first">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid rounded" src="img/myProject01.png" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/myProject01.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item second">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid rounded" src="img/myProject01.png" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/myProject01.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Projects End -->
+    
+    
+        <!-- Team Start -->
+        <!-- <div class="container-fluid py-6 pb-5" id="team">
+            <div class="container">
+                <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-6">
+                        <h1 class="display-5 mb-0">Team Members</h1>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                        <a class="btn btn-primary py-3 px-5" href="">Contact Us</a>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item position-relative">
+                            <img class="img-fluid rounded" src="img/team-1.jpg" alt="">
+                            <div class="team-text bg-white rounded-end p-4">
+                                <div>
+                                    <h5>Full Name</h5>
+                                    <span>Designer</span>
+                                </div>
+                                <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item position-relative">
+                            <img class="img-fluid rounded" src="img/team-2.jpg" alt="">
+                            <div class="team-text bg-white rounded-end p-4">
+                                <div>
+                                    <h5>Full Name</h5>
+                                    <span>Designer</span>
+                                </div>
+                                <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item position-relative">
+                            <img class="img-fluid rounded" src="img/team-3.jpg" alt="">
+                            <div class="team-text bg-white rounded-end p-4">
+                                <div>
+                                    <h5>Full Name</h5>
+                                    <span>Designer</span>
+                                </div>
+                                <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Team End -->
+    
+    
+        <!-- Testimonial Start -->
+        <div class="container-fluid py-5" id="testimonial">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Testimonial</h1>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <div class="testimonial-left h-100">
+                            <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/myImg.jpg" alt="">
+                            <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/myImg.jpg" alt="">
+                            <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/myImg.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="owl-carousel testimonial-carousel">
+                            <div class="testimonial-item text-center">
+                                <div class="position-relative mb-5">
+                                    <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
+                                        src="img/myImg.jpg" alt="">
+                                    <div class="testimonial-icon">
+                                        <i class="fa fa-quote-left text-primary"></i>
+                                    </div>
+                                </div>
+                                <p class="fs-5 fst-italic px-sm-5 px-lg-0">
+                                    <p class="m-0 px-sm-5 px-lg-0">Working with TechieScript was an absolute pleasure. Their attention to detail, creativity, and technical expertise brought our project to life. The result exceeded our expectations, and the seamless collaboration made the entire process enjoyable. Highly recommended!</p>
+                                </p> 
+                                <hr class="w-25 mx-auto bg-primary">
+                                <h5>Client Name</h5>
+                                <span>Profession</span>
+                            </div>
+                            <div class="testimonial-item text-center">
+                                <div class="position-relative mb-5">
+                                    <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
+                                        src="img/myImg.jpg" alt="">
+                                    <div class="testimonial-icon">
+                                        <i class="fa fa-quote-left text-primary"></i>
+                                    </div>
+                                </div>
+                                <p class="fs-5 fst-italic px-sm-5 px-lg-0">
+                                    <p class="m-0 px-sm-5 px-lg-0">TechieScript is a true professional in the field of Web designing. Their ability to understand our unique requirements and translate them into a functional and visually stunning solution was remarkable. Timely delivery and excellent communication throughout the project made them a standout choice for our team.</p>
+                                </p> 
+                                <hr class="w-25 mx-auto bg-primary">
+                                <h5>Client Name</h5>
+                                <span>Profession</span>
+                            </div>
+                            <div class="testimonial-item text-center">
+                                <div class="position-relative mb-5">
+                                    <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
+                                        src="img/myImg.jpg" alt="">
+                                    <div class="testimonial-icon">
+                                        <i class="fa fa-quote-left text-primary"></i>
+                                    </div>
+                                </div>
+                                <p class="fs-5 fst-italic px-sm-5 px-lg-0">
+                                    <p class="m-0 px-sm-5 px-lg-0">I had the pleasure of collaborating with TechieScript on a design project, and the results were phenomenal. Their creativity, attention to user experience, and commitment to delivering a polished product were evident at every stage. I look forward to future projects together!</p>
+                                </p> 
+                                <hr class="w-25 mx-auto bg-primary">
+                                <h5>Client Name</h5>
+                                <span>Profession</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <div class="testimonial-right h-100">
+                            <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/myImg.jpg" alt="">
+                            <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/myImg.jpg" alt="">
+                            <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/myImg.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+    
+    
+        <!-- Contact Start -->
+        <div id="contact">
+    
+            <div class="container-fluid py-5">
+                <div class="container py-md-5">
+                    <div class="row g-5 mb-md-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-6">
+                            <h1 class="display-5 mb-0">Let's <span>Work</span> Together</h1>
+                        </div>
+                        <!-- <div class="col-lg-6 text-lg-end">
+                            <a class="btn btn-primary py-3 px-5" href="">Say Hello</a>
+                        </div> -->
+                    </div>
+                    <div class="row g-5">
+                        <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <!-- <p class="mb-2">My office:</p> -->
+                            <p class="mb-2"><span><ion-icon name="location-outline"></ion-icon></span></p>
+                            <h5 class="fw-normal">OBATOB Building, Lagos Garage, Ijebu-Ode, Ogun State.</h5>
+                            <hr class="w-100">
+                            <!-- <p class="mb-2">Call me:</p> -->
+                            <p class="mb-2"><span><ion-icon name="call-outline"></ion-icon></span></p>
+                            <h5 class="fw-normal">+234 811 960 7193</h5>
+                            <hr class="w-100">
+                            <!-- <p class="mb-2">Mail me:</p> -->
+                            <p class="mb-2"><span><ion-icon name="mail-unread-outline"></ion-icon></span></p>
+                            <h5 class="fw-normal">adeoyesodeeqademola@gmail.com</h5>
+                        </div>
+                        <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                                style="height: 130px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div style="width: fit-content; margin-left: auto;">
+                                            <button style="padding: 0; margin: 0; border: none;background: none !important;" type="submit">
+                                                <a class="downloadCV_btn mt-4"
+                                                    style="margin-right: 0 !important;"><span>Send Message</span></a>
+                                            </button>
+                                        </div>
+                                        <!-- <button class="btn btn-primary px-4" type="submit">Send Message</button> -->
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact End -->
+    
+    
+            <!-- Map Start -->
+            <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s" style="padding-bottom: 14em;">
+                <div class="container-xxl pt-5 px-0">
+                    <div class="bg-dark">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                            frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- Map End -->
+        </div>
+    
+    
+        <!-- Footer Start -->
+        <footer>
+            <div class="waves"> 
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social_icon">
+                <li class="wow fadeInUp" data-wow-delay="0.1s"><a href="tel:+2348119607193"><ion-icon name="call-outline"></ion-icon></a></li>
+                <li class="wow fadeInUp" data-wow-delay="0.3s"><a href="https://wa.link/rx5ioh" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                <li class="wow fadeInUp" data-wow-delay="0.5s"><a href="https://twitter.com/AdeoyeSodeeq21" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li class="wow fadeInUp" data-wow-delay="0.7s"><a href="https://www.linkedin.com/in/adeoye-sodeeq-57a111246/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+            <ul class="menu" style="padding-left: 0;">
+                <li class="wow fadeInUp" data-wow-delay="0.9s"><a href="#home">Home</a></li>
+                <li class="wow fadeInUp" data-wow-delay="1.1s"><a href="#about">About</a></li>
+                <li class="wow fadeInUp" data-wow-delay="1.3s"><a href="#skill">Skills</a></li>
+                <li class="wow fadeInUp" data-wow-delay="1.5s"><a href="#service">Services</a></li>
+                <li class="wow fadeInUp" data-wow-delay="1.7s"><a href="#contact">Contact</a></li>
+            </ul>
+            <p class="wow fadeInUp" data-wow-delay="1.9s">Copyright MyPortfolio © <script>document.write(new Date().getFullYear());</script> | All Rights Reserved</p>
+        </footer>
+        <!-- Footer End -->
+    </div>
+
+
+    <!-- Copyright Start -->
+
+    <!-- <div class="container-fluid bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom text-secondary" href="#">Your Site Name</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed By <a class="border-bottom text-secondary" href="https://htmlcodex.com">HTML Codex</a>
+                    <br>Distributed By: <a class="border-bottom" href="https://themewagon.com"
+                        target="_blank">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg to_top btn-lg-square back-to-top"
+        style="opacity: 0; animation: slideTop 1s ease forwards; animation-delay: 2s;">
+        <i class="bx bx-chevrons-up"></i>
+    </a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        const lists = document.querySelectorAll('.list');
+        const navigation = document.querySelector('.navigation');
+        const toggle = document.querySelector('.toggle');
+        const indicator = document.querySelector('.indicator');
+
+        function setActiveLink() {
+            const scrollPosition = window.scrollY;
+
+            lists.forEach((item) => {
+                const targetHash = item.querySelector('a').getAttribute('href');
+                const targetElement = document.querySelector(targetHash);
+
+                if (targetElement.offsetTop <= scrollPosition && targetElement.offsetTop + targetElement.offsetHeight > scrollPosition) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+        }
+
+        function toggleNavigation() {
+            navigation.classList.toggle('active');
+        }
+
+        // Add click event listener to the navigation toggle
+        toggle.addEventListener('click', toggleNavigation);
+
+        // Add click event listeners to the navigation links
+        lists.forEach((item) => {
+            item.addEventListener('click', () => {
+                // Remove the active class from all links
+                lists.forEach((list) => list.classList.remove('active'));
+                // Add the active class to the clicked link
+                item.classList.add('active');
+                // Close the navigation menu (optional)
+                navigation.classList.remove('active');
+            });
+        });
+
+        // Add scroll event listener to update the active link on scroll
+        window.addEventListener('scroll', setActiveLink);
+
+        // const lists = document.querySelectorAll('.list');
+        // function activeLink() {
+        //     lists.forEach((item) =>
+        //         item.classList.remove('active'));
+        //     this.classList.add('active');
+        // }
+        // lists.forEach((item) =>
+        //     item.addEventListener('click', activeLink))
+
+        // let navigation = document.querySelector('.navigation');
+        // let toggle = document.querySelector('.toggle');
+
+        // toggle.onclick = function () {
+        //     navigation.classList.toggle('active')
+        // }
+    </script>
+</body>
+
+</html>
