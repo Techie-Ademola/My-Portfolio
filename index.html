@@ -42,6 +42,24 @@
             /* --dark: #12141D; */
             --dark: #081C29;
         }
+        .btn-outline-secondary, .typed_text {
+            text-shadow: 1px 1px 0 white !important;
+        }
+        .btn-close{
+            width: 30px;
+            height: 30px;
+            max-width: 30px;
+            max-height: 30px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            position: absolute;
+            top: 10px;
+            right: 10px;
+             z-index: 999;
+        }
+        .iframe_el * {
+            background-color: transparent !important;
+        }
     </style>
 </head>
 
@@ -161,28 +179,28 @@
                     <div class="col-lg-6 py-6 pb-0 pb-md-6 pt-lg-0">
                         <h2 class="text-primary mb-3"
                             style="opacity: 0; animation: slideTop 1s ease forwards;animation-delay: 1s;"><span
-                                class="btn-outline-secondary">Hello</span>, It's Me
+                                class="btn-outline-secondary">Hello</span>, I'm
                         </h2>
-                        <h1 class="display-3 mb-3"
-                            style="opacity: 0; animation: slideRight 1s ease forwards;animation-delay: .5s;">Techie Script
+                        <h1 class="display-2 text-white mb-3"
+                            style="opacity: 0; animation: slideRight 1s ease forwards;animation-delay: .5s;">TechieScript
                         </h1>
                         <div class="d-md-flex auto_types"
                             style="opacity: 0; animation: slideBottom 1s ease forwards;animation-delay: 1s;">
-                            <h2 style="display: inline;" class="px-md-2 i_am">And I'm A</h2>
-                            <h2 style="display: inline;" class="typed-text-output d-inline typed_text"></h2>
+                            <h2 style="display: inline;" class="px-md-2 i_am display-5">A</h2>
+                            <h2 style="display: inline; white-space: nowrap;" class="typed-text-output d-inline typed_text display-5"></h2>
                         </div>
-                        <div class="typed-text d-none">Mobile Developer, Front End Developer, Website Designer</div>
+                        <div class="typed-text d-none">Mobile App Developer, Frontend Web Developer, Web/App Designer</div>
                         <div class="d-flex align-items-center pt-5">
                             <!-- <a href="" class="btn btn-primary btn_primary py-3 px-4 me-5">Download CV</a> -->
-                            <a href="index.html" class="downloadCV_btn"><span>Download CV</span></a>
-                            <!-- <button type="button" class="btn-play" data-bs-toggle="modal"
-                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal"
+                            <a href="./My CV.pdf" target="_blank" class="downloadCV_btn"><span>Download CV</span></a>
+                            <button type="button" class="btn-play" data-bs-toggle="modal"
+                                data-src="./My New CV.mp4" data-bs-target="#videoModal"
                                 style="opacity: 0; animation: slideLeft 1s ease forwards;animation-delay: 2s;">
                                 <span></span>
                             </button>
                             <h5 class="ms-4 mb-0 d-none play_text d-sm-block"
                                 style="opacity: 0; animation: slideLeft 1s ease forwards;animation-delay: 2s;">Play Video
-                            </h5> -->
+                            </h5>
                         </div>
                         <div class="social_media">
                             <a href="tel:+2348119607193" style="--i:7;"><ion-icon name="call-outline"></ion-icon></a>
@@ -204,16 +222,16 @@
         <!-- Video Modal Start -->
         <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-dialog" style="border: none !important;">
+                <div class="modal-content rounded-0" style="background-color: transparent !important;">
+                    <div class="modal-header" style="background-color: transparent !important; border: none !important;">
+                        <!-- <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3> -->
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body position-relative">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: white; fill: white;"></button>
                         <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
-                                allowscriptaccess="always" allow="autoplay"></iframe>
+                            <iframe class="embed-responsive-item iframe_el" src="" id="video" allowfullscreen
+                                allowscriptaccess="always" allow="autoplay" style="min-height: 90vh; padding: 4em 0; background-color: #081C29;"></iframe>
                         </div>
                     </div>
                 </div>
@@ -370,25 +388,25 @@
                             <div id="tab-1" class="tab-pane fade show p-0 active">
                                 <div class="row gy-5 gx-4">
                                     <div class="col-sm-6">
-                                        <h5>Frontend Developer</h5>
+                                        <h5>Frontend Web Developer</h5>
                                         <hr class="text-primary my-2">
                                         <p class="text-primary mb-1">2022 - Present</p>
                                         <h6 class="mb-0">Autocredit Technology</h6>
                                     </div>
                                     <div class="col-sm-6">
-                                        <h5>Mobile Developer</h5>
+                                        <h5>Mobile App Developer</h5>
                                         <hr class="text-primary my-2">
                                         <p class="text-primary mb-1">2022 - Present</p>
                                         <h6 class="mb-0">Autocredit Technology</h6>
                                     </div>
                                     <div class="col-sm-6">
-                                        <h5>Web Designer</h5>
+                                        <h5>Website Designer</h5>
                                         <hr class="text-primary my-2">
                                         <p class="text-primary mb-1">2022 - Present</p>
                                         <h6 class="mb-0">Autocredit Technology</h6>
                                     </div>
                                     <div class="col-sm-6">
-                                        <h5>Apps Designer</h5>
+                                        <h5>Website/Mobile App Designer</h5>
                                         <hr class="text-primary my-2">
                                         <p class="text-primary mb-1">2022 - Present</p>
                                         <h6 class="mb-0">Autocredit Technology</h6>
@@ -400,8 +418,8 @@
                                     <div class="col-sm-6">
                                         <h5>COMPUTER SCIENCE</h5>
                                         <hr class="text-primary my-2">
-                                        <h6 class="mb-2 mt-3">Lagos State University (LASU)</h6>
-                                        <p class="text-primary mb-1">2022 - Present</p>
+                                        <h6 class="mb-2 mt-3">Tai Solarin University of Education</h6>
+                                        <p class="text-primary mb-1">2024 - Present</p>
                                     </div>
                                     <!-- <div class="col-sm-6">
                                         <h5>IOS Development</h5>

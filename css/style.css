@@ -297,7 +297,8 @@ h5 {
 .modal-video .modal-dialog {
     position: relative;
     max-width: 800px;
-    margin: 60px auto 0 auto;
+    margin: 0px auto 0 auto;
+    /* min-height: 70vh; */
 }
 
 .modal-video .modal-body {
@@ -791,6 +792,13 @@ h5 {
     align-items: center;
     animation: slideLeft 1s ease forwards;
     z-index: 999999 !important;
+}
+.toggle.large_screen_toggle {
+    position: relative;
+    bottom: 0 !important;
+    left: auto;
+    right: 0;
+    top: auto;
 }
 
 .toggle::before {
